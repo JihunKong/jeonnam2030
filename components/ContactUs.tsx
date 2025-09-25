@@ -145,7 +145,7 @@ export function ContactUs() {
               <div className="border border-border rounded-lg p-4">
                 <h4 className="font-semibold mb-2">Q. 수업 참관 신청은 어떻게 하나요?</h4>
                 <p className="text-sm text-muted-foreground">
-                  A. '수업 공개 일정 및 신청' 탭에서 온라인으로 신청하실 수 있습니다. 
+                  A. '수업 나눔 일정 및 신청' 탭에서 온라인으로 신청하실 수 있습니다. 
                   참관 희망일 3일 전까지 신청해주세요.
                 </p>
               </div>

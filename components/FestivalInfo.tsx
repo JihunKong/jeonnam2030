@@ -65,9 +65,9 @@ export function FestivalInfo() {
         return (
           <div className="space-y-6">
             <div className="text-center mb-8">
-              <h2 className="text-3xl font-bold mb-4">2030수업축제</h2>
+              <h2 className="text-3xl font-bold mb-4">2030수업나눔한마당</h2>
               <p className="text-lg text-muted-foreground">
-                미래교육의 새로운 패러다임을 제시하는 교육 축제
+                미래교육의 새로운 패러다임을 제시하는 2030수업나눔한마당
               </p>
             </div>
 
@@ -75,7 +75,7 @@ export function FestivalInfo() {
               <div>
                 <ImageWithFallback 
                   src="https://imgur.com/nJq6MBk.png"
-                  alt="수업 축제 현장"
+                  alt="수업나눔한마당 현장"
                   className="w-full h-64 object-cover rounded-lg"
                 />
               </div>
@@ -84,12 +84,12 @@ export function FestivalInfo() {
                   <CardHeader>
                     <CardTitle className="flex items-center gap-2">
                       <Star className="h-5 w-5 text-yellow-500" />
-                      축제 개요
+                      수업나눔한마당 개요
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="mb-4">
-                      전라남도교육청이 주관하는 2030수업축제는 미래형 교실에서 
+                      전라남도교육청이 주관하는 2030수업나눔한마당은 미래형 교실에서 
                       이루어지는 혁신적인 수업 사례를 공유하고, 전남의 선생님들과 
                       함께 소통하는 교육 박람회입니다.
                     </p>
@@ -174,7 +174,7 @@ export function FestivalInfo() {
             <div className="max-w-2xl mx-auto">
               <ImageWithFallback 
                 src="https://imgur.com/ccU8iqO.png"
-                alt="2030 수업 축제 포스터"
+                alt="2030수업축제 포스터"
                 className="w-full rounded-lg shadow-lg"
               />
               <div className="mt-4 text-center">
@@ -187,7 +187,7 @@ export function FestivalInfo() {
       case "schedule":
         return (
           <div className="space-y-6">
-            <h2 className="text-2xl font-bold text-center mb-6">축제 일정</h2>
+            <h2 className="text-2xl font-bold text-center mb-6">수업나눔한마당 일정</h2>
             <div className="max-w-6xl mx-auto">
               <div className="grid md:grid-cols-2 gap-4">
                 {scheduleData.map((item, index) => (

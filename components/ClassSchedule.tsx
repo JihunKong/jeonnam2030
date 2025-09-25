@@ -773,7 +773,7 @@ export function ClassSchedule() {
       <div className="w-64 bg-sidebar border-r border-sidebar-border p-4">
         <div className="space-y-4">
           <div>
-            <h3 className="font-semibold mb-3">수업 공개</h3>
+            <h3 className="font-semibold mb-3">수업나눔</h3>
             <nav className="space-y-2">
               <Button 
                 variant="ghost" 
@@ -781,7 +781,7 @@ export function ClassSchedule() {
                 onClick={() => {/* 수업공개일정 */}}
               >
                 <Calendar className="mr-2 h-4 w-4" />
-                수업공개일정
+                수업나눔일정
               </Button>
               <Button 
                 variant="ghost" 
