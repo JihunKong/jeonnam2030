@@ -119,7 +119,7 @@ export function ClassListItem({ classData, onViewQR }: ClassListItemProps) {
                 className="flex items-center gap-2"
               >
                 <ExternalLink className="h-3 w-3" />
-                수업 자료
+                수업 영상
               </Button>
               <Button
                 variant="outline" 
@@ -131,7 +131,7 @@ export function ClassListItem({ classData, onViewQR }: ClassListItemProps) {
                 className="flex items-center gap-2"
               >
                 <QrCode className="h-3 w-3" />
-                수업 영상 QR
+                QR코드
               </Button>
             </div>
           </div>

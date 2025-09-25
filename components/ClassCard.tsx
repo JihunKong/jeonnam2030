@@ -88,7 +88,7 @@ export function ClassCard({ classData, onViewQR }: ClassCardProps) {
             className="flex items-center gap-1"
           >
             <ExternalLink className="h-3 w-3" />
-            수업자료
+            수업영상
           </Button>
           <Button 
             size="sm" 
@@ -97,7 +97,7 @@ export function ClassCard({ classData, onViewQR }: ClassCardProps) {
             className="flex items-center gap-1"
           >
             <QrCode className="h-3 w-3" />
-            수업영상
+            QR코드
           </Button>
         </div>
       </CardContent>
