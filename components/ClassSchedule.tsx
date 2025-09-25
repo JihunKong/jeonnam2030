@@ -57,7 +57,7 @@ export function ClassSchedule() {
   {
     "id": "1",
     "title": "AI 판사를 설득하라!(비판적으로 추론하기)",
-    "teacher": "신세령",
+    "teacher": "신O령",
     "subject": "국어",
     "grade": "중학교",
     "date": "2025년 10월 22일",
@@ -70,7 +70,7 @@ export function ClassSchedule() {
   {
     "id": "2",
     "title": "협동 책 만들기 프로젝트",
-    "teacher": "송희선",
+    "teacher": "송O선",
     "subject": "국어",
     "grade": "중학교",
     "date": "2025년 10월 29일",
@@ -83,7 +83,7 @@ export function ClassSchedule() {
   {
     "id": "3",
     "title": "출처와 근거에 따라 AI질문 적합성 검토하고 독서토론하기",
-    "teacher": "김지현, 이혜옥",
+    "teacher": "김O현, 이O옥",
     "subject": "국어",
     "grade": "고등학교",
     "date": "2025년 10월 21일",
@@ -96,7 +96,7 @@ export function ClassSchedule() {
   {
     "id": "4",
     "title": "문학, 여행이 되다!",
-    "teacher": "김유진",
+    "teacher": "김O진",
     "subject": "국어",
     "grade": "고등학교",
     "date": "2025년 10월 28일",
@@ -109,7 +109,7 @@ export function ClassSchedule() {
   {
     "id": "5",
     "title": "인구 통계 자료 분석 및 미래 인구 예측 활동",
-    "teacher": "박진환",
+    "teacher": "박O환",
     "subject": "수학",
     "grade": "중학교",
     "date": "2025년 10월 15일",
@@ -122,7 +122,7 @@ export function ClassSchedule() {
   {
     "id": "6",
     "title": "디지털 기기를 이용한 학생과 소통 수업",
-    "teacher": "정재범",
+    "teacher": "정O범",
     "subject": "수학",
     "grade": "중학교",
     "date": "2025년 10월 31일",
@@ -135,7 +135,7 @@ export function ClassSchedule() {
   {
     "id": "7",
     "title": "데이터 속 숨은 관계 찾기: AI와 함께 하는 상관관계 분석",
-    "teacher": "국호",
+    "teacher": "국O",
     "subject": "수학",
     "grade": "중학교",
     "date": "2025년 10월 23일",
@@ -148,7 +148,7 @@ export function ClassSchedule() {
   {
     "id": "8",
     "title": "미술작품 속 소실점을 활용하여 닮음비 구하기",
-    "teacher": "문지숙",
+    "teacher": "문O숙",
     "subject": "수학",
     "grade": "중학교",
     "date": "2025년 10월 30일",
@@ -161,7 +161,7 @@ export function ClassSchedule() {
   {
     "id": "9",
     "title": "통계자료 분석을 통한 미래변화 예측하기",
-    "teacher": "정세영",
+    "teacher": "정O영",
     "subject": "수학",
     "grade": "고등학교",
     "date": "2025년 10월 30일",
@@ -174,7 +174,7 @@ export function ClassSchedule() {
   {
     "id": "10",
     "title": "도형의 방정식을 활용한 15분 도시 설계",
-    "teacher": "박수경",
+    "teacher": "박O경",
     "subject": "수학",
     "grade": "고등학교",
     "date": "2025년 11월 5일",
@@ -187,7 +187,7 @@ export function ClassSchedule() {
   {
     "id": "11",
     "title": "수학적 모델링을 통한 무안 낙지 관련 정책 제안 프로젝트",
-    "teacher": "김슬비",
+    "teacher": "김O비",
     "subject": "수학",
     "grade": "고등학교",
     "date": "2025년 10월 28일",
@@ -200,7 +200,7 @@ export function ClassSchedule() {
   {
     "id": "12",
     "title": "국제 정세 속 관세 정책을 경제 수학으로 분석하기",
-    "teacher": "문화인",
+    "teacher": "문O인",
     "subject": "수학",
     "grade": "고등학교",
     "date": "2025년 10월 23일",
@@ -213,7 +213,7 @@ export function ClassSchedule() {
   {
     "id": "13",
     "title": "디지털 리터러시 역량을 기르기 위한 온라인 공동 협업 프로젝트",
-    "teacher": "손윤지",
+    "teacher": "손O지",
     "subject": "영어",
     "grade": "중학교",
     "date": "2025년 11월 6일",
@@ -226,7 +226,7 @@ export function ClassSchedule() {
   {
     "id": "14",
     "title": "여행 속 기후변화, 영어로 기록하기",
-    "teacher": "김나은",
+    "teacher": "김O은",
     "subject": "영어",
     "grade": "중학교",
     "date": "2025년 11월 5일",
@@ -239,7 +239,7 @@ export function ClassSchedule() {
   {
     "id": "15",
     "title": "인공지능(AI)을 활용한 미래 학교 시설 홍보 프로젝트",
-    "teacher": "조유라",
+    "teacher": "조O라",
     "subject": "영어",
     "grade": "중학교",
     "date": "2025년 10월 17일",
@@ -252,7 +252,7 @@ export function ClassSchedule() {
   {
     "id": "16",
     "title": "윤동주 시를 읽고 나만의 별을 찾아, 삶과 연결된 영시 쓰기",
-    "teacher": "이서주",
+    "teacher": "이O주",
     "subject": "영어",
     "grade": "중학교",
     "date": "2025년 10월 31일",
@@ -265,7 +265,7 @@ export function ClassSchedule() {
   {
     "id": "17",
     "title": "탄소발자국과 친환경 생활",
-    "teacher": "안지희",
+    "teacher": "안O희",
     "subject": "영어",
     "grade": "중학교",
     "date": "2025년 10월 27일",
@@ -278,7 +278,7 @@ export function ClassSchedule() {
   {
     "id": "18",
     "title": "환경 문제 해결을 위한 영어 웹툰 제작하기",
-    "teacher": "정가희",
+    "teacher": "정O희",
     "subject": "영어",
     "grade": "중학교",
     "date": "2025년 10월 27일",
@@ -291,7 +291,7 @@ export function ClassSchedule() {
   {
     "id": "19",
     "title": "인간의 본성에 대한 탐구(단편 소설에 나타난 인간의 심리)",
-    "teacher": "윤영근",
+    "teacher": "윤O근",
     "subject": "영어",
     "grade": "고등학교",
     "date": "2025년 10월 24일",
@@ -304,7 +304,7 @@ export function ClassSchedule() {
   {
     "id": "20",
     "title": "화성 탐사: 인류의 미래를 향한 도전(영어 에세이 쓰기)",
-    "teacher": "나미경",
+    "teacher": "나O경",
     "subject": "영어",
     "grade": "고등학교",
     "date": "2025년 10월 29일",
@@ -317,7 +317,7 @@ export function ClassSchedule() {
   {
     "id": "21",
     "title": "세대 간 가치와 인식의 차이를 주제로 탐구 활동",
-    "teacher": "김용성",
+    "teacher": "김O성",
     "subject": "영어",
     "grade": "고등학교",
     "date": "2025년 10월 16일",
@@ -330,7 +330,7 @@ export function ClassSchedule() {
   {
     "id": "22",
     "title": "평화포럼, 평화를 묻고 윤리로 답하다",
-    "teacher": "강정",
+    "teacher": "강O",
     "subject": "윤리",
     "grade": "고등학교",
     "date": "2025년 10월 15일",
@@ -343,7 +343,7 @@ export function ClassSchedule() {
   {
     "id": "23",
     "title": "우리 마을 조례 제정, 시민 참여",
-    "teacher": "김민경",
+    "teacher": "김O경",
     "subject": "사회",
     "grade": "중학교",
     "date": "2025년 10월 20일",
@@ -356,7 +356,7 @@ export function ClassSchedule() {
   {
     "id": "24",
     "title": "사회 문제 해결을 위한 온라인 정책 전시회",
-    "teacher": "김주은",
+    "teacher": "김O은",
     "subject": "사회",
     "grade": "중학교",
     "date": "2025년 10월 17일",
@@ -369,7 +369,7 @@ export function ClassSchedule() {
   {
     "id": "25",
     "title": "가보고 싶은 아메리카 국가의 자연환경 특징 찾기",
-    "teacher": "강민구",
+    "teacher": "강O구",
     "subject": "사회",
     "grade": "중학교",
     "date": "2025년 10월 27일",
@@ -382,7 +382,7 @@ export function ClassSchedule() {
   {
     "id": "26",
     "title": "스케일 사고(scale thinking)를 통한 나와 지역을 잇기",
-    "teacher": "양지영",
+    "teacher": "양O영",
     "subject": "한국지리",
     "grade": "고등학교",
     "date": "2025년 10월 20일",
@@ -395,7 +395,7 @@ export function ClassSchedule() {
   {
     "id": "27",
     "title": "국제기구 종사자 멘토링을 통한 공해 수출 온라인 지도 만들기",
-    "teacher": "최소망",
+    "teacher": "최O망",
     "subject": "통합사회",
     "grade": "고등학교",
     "date": "2025년 10월 20일",
@@ -408,7 +408,7 @@ export function ClassSchedule() {
   {
     "id": "28",
     "title": "다산 정약용의 사상으로 알아보는 지방자치제도",
-    "teacher": "이동민",
+    "teacher": "이O민",
     "subject": "한국사",
     "grade": "고등학교",
     "date": "2025년 11월 6일",
@@ -421,7 +421,7 @@ export function ClassSchedule() {
   {
     "id": "29",
     "title": "디지털 탐구와 기후 자료로 보는 기후 변화와 대응",
-    "teacher": "이화연",
+    "teacher": "이O연",
     "subject": "과학",
     "grade": "중학교",
     "date": "2025년 10월 31일",
@@ -434,7 +434,7 @@ export function ClassSchedule() {
   {
     "id": "30",
     "title": "생식세포가 만들어지는 과정",
-    "teacher": "전원미",
+    "teacher": "전O미",
     "subject": "과학",
     "grade": "중학교",
     "date": "2025년 10월 22일",
@@ -447,7 +447,7 @@ export function ClassSchedule() {
   {
     "id": "31",
     "title": "수자원의 가치 찾기 프로젝트",
-    "teacher": "김혜영",
+    "teacher": "김O영",
     "subject": "과학",
     "grade": "중학교",
     "date": "2025년 11월 5일",
@@ -460,7 +460,7 @@ export function ClassSchedule() {
   {
     "id": "32",
     "title": "여러가지 에너지 전환과 보존",
-    "teacher": "박재운",
+    "teacher": "박O운",
     "subject": "과학",
     "grade": "중학교",
     "date": "2025년 10월 21일",
@@ -473,7 +473,7 @@ export function ClassSchedule() {
   {
     "id": "33",
     "title": "생활 속 물질의 pH 웹 노선도 만들기",
-    "teacher": "문샛별",
+    "teacher": "문O별",
     "subject": "화학",
     "grade": "고등학교",
     "date": "2025년 10월 30일",
@@ -486,7 +486,7 @@ export function ClassSchedule() {
   {
     "id": "34",
     "title": "오염 물질측정 장치를 활용한 학교 주변 환경 탐구하기",
-    "teacher": "송영지",
+    "teacher": "송O지",
     "subject": "과학탐구실험",
     "grade": "고등학교",
     "date": "2025년 10월 15일",
@@ -499,7 +499,7 @@ export function ClassSchedule() {
   {
     "id": "35",
     "title": "기후 변화 독서 토론",
-    "teacher": "박유성",
+    "teacher": "박O성",
     "subject": "통합과학",
     "grade": "고등학교",
     "date": "2025년 10월 31일",
@@ -512,7 +512,7 @@ export function ClassSchedule() {
   {
     "id": "36",
     "title": "기후변화와 생물다양성(전남형 미네르바 토론 수업)",
-    "teacher": "구혜빈",
+    "teacher": "구O빈",
     "subject": "통합과학",
     "grade": "고등학교",
     "date": "2025년 10월 28일",
@@ -525,7 +525,7 @@ export function ClassSchedule() {
   {
     "id": "37",
     "title": "언어 번역기 앱 설계 및 제작하기",
-    "teacher": "이준영",
+    "teacher": "이O영",
     "subject": "기술",
     "grade": "중학교",
     "date": "2025년 10월 22일",
@@ -538,7 +538,7 @@ export function ClassSchedule() {
   {
     "id": "38",
     "title": "지능 에이전트를 활용한 환경보호 캠페인 노래앨범 만들기",
-    "teacher": "김상훈",
+    "teacher": "김O훈",
     "subject": "정보",
     "grade": "고등학교",
     "date": "2025년 10월 27일",
@@ -551,7 +551,7 @@ export function ClassSchedule() {
   {
     "id": "39",
     "title": "글로벌 피드백을 반영한 사이트 유지보수",
-    "teacher": "백혜숙",
+    "teacher": "백O숙",
     "subject": "상업",
     "grade": "고등학교",
     "date": "2025년 10월 28일",
@@ -564,7 +564,7 @@ export function ClassSchedule() {
   {
     "id": "40",
     "title": "생활 속 디지털 음악 도구와 실시간 협업 창작 프로젝트 학습",
-    "teacher": "박준",
+    "teacher": "박O",
     "subject": "음악",
     "grade": "중학교",
     "date": "2025년 10월 27일",
@@ -577,7 +577,7 @@ export function ClassSchedule() {
   {
     "id": "41",
     "title": "직접 만든 악기(우쿨렐레)로 연주를 해봐요",
-    "teacher": "김민지",
+    "teacher": "김O지",
     "subject": "음악",
     "grade": "고등학교",
     "date": "2025년 10월 16일",
@@ -590,7 +590,7 @@ export function ClassSchedule() {
   {
     "id": "42",
     "title": "나도 K-pop 작곡가",
-    "teacher": "김민주",
+    "teacher": "김O주",
     "subject": "음악",
     "grade": "고등학교",
     "date": "2025년 10월 23일",
@@ -603,7 +603,7 @@ export function ClassSchedule() {
   {
     "id": "43",
     "title": "숏폼 미디어와 음악 : 디지털 시대의 표현",
-    "teacher": "고은하",
+    "teacher": "고O하",
     "subject": "음악",
     "grade": "고등학교",
     "date": "2025년 10월 30일",
@@ -616,7 +616,7 @@ export function ClassSchedule() {
   {
     "id": "44",
     "title": "그림책에서 굿즈로 : 지역의 이야기를 담은 디자인 프로젝트",
-    "teacher": "한은하",
+    "teacher": "한O하",
     "subject": "미술",
     "grade": "중학교",
     "date": "2025년 11월 3일",
@@ -629,7 +629,7 @@ export function ClassSchedule() {
   {
     "id": "45",
     "title": "우리 지역 산수화 미디어아트 프로젝트",
-    "teacher": "조현희",
+    "teacher": "조O희",
     "subject": "미술",
     "grade": "고등학교",
     "date": "2025년 10월 22일",
@@ -642,7 +642,7 @@ export function ClassSchedule() {
   {
     "id": "46",
     "title": "한일 공동 생태 토론",
-    "teacher": "전다은",
+    "teacher": "전O은",
     "subject": "일본어",
     "grade": "고등학교",
     "date": "2025년 10월 31일",
@@ -655,7 +655,7 @@ export function ClassSchedule() {
   {
     "id": "47",
     "title": "내 고장 문화재를 창직 한시로 소개하기",
-    "teacher": "이선미",
+    "teacher": "이O미",
     "subject": "한문",
     "grade": "중학교",
     "date": "2025년 10월 30일",
@@ -668,7 +668,7 @@ export function ClassSchedule() {
   {
     "id": "48",
     "title": "직업 세계의 변화",
-    "teacher": "박지홍",
+    "teacher": "박O홍",
     "subject": "진로",
     "grade": "중학교",
     "date": "2025년 10월 30일",
@@ -681,7 +681,7 @@ export function ClassSchedule() {
   {
     "id": "49",
     "title": "다양한 교과 활동을 통해 자신의 감정을 인지하고 바르게 표현하기",
-    "teacher": "최진",
+    "teacher": "최O",
     "subject": "특수",
     "grade": "중학교",
     "date": "2025년 10월 29일",
@@ -694,7 +694,7 @@ export function ClassSchedule() {
   {
     "id": "50",
     "title": "우리 지역에서 열리는 축제의 특징과 좋은 점 소개하기",
-    "teacher": "김영실",
+    "teacher": "김O실",
     "subject": "특수",
     "grade": "중학교",
     "date": "2025년 10월 28일",
