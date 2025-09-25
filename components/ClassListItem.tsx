@@ -121,8 +121,8 @@ export function ClassListItem({ classData, onViewQR }: ClassListItemProps) {
                 <ExternalLink className="h-3 w-3" />
                 수업 영상
               </Button>
-              <Button
-                variant="outline" 
+              {/* <Button
+                variant="outline"
                 size="sm"
                 onClick={(e) => {
                   e.stopPropagation();
@@ -132,7 +132,7 @@ export function ClassListItem({ classData, onViewQR }: ClassListItemProps) {
               >
                 <QrCode className="h-3 w-3" />
                 QR코드
-              </Button>
+              </Button> */}
             </div>
           </div>
         )}

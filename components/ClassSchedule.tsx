@@ -786,7 +786,7 @@ export function ClassSchedule() {
               <Button 
                 variant="ghost" 
                 className="w-full justify-start"
-                onClick={() => window.open("https://forms.google.com/example", "_blank")}
+                onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSd5Mco97HyPTjyIFsqWwoe-XtHvtYBEfmHaiATQQ8PfXIcFXQ/viewform", "_blank")}
               >
                 <FileText className="mr-2 h-4 w-4" />
                 참관 신청
@@ -808,7 +808,7 @@ export function ClassSchedule() {
             <div className="flex items-center gap-4">
               <Button
                 variant="outline"
-                onClick={() => window.open("https://forms.google.com/example", "_blank")}
+                onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSd5Mco97HyPTjyIFsqWwoe-XtHvtYBEfmHaiATQQ8PfXIcFXQ/viewform", "_blank")}
                 className="flex items-center gap-2"
               >
                 <Users className="h-4 w-4" />

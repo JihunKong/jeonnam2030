@@ -90,15 +90,15 @@ export function ClassCard({ classData, onViewQR }: ClassCardProps) {
             <ExternalLink className="h-3 w-3" />
             수업영상
           </Button>
-          <Button 
-            size="sm" 
+          {/* <Button
+            size="sm"
             variant="outline"
             onClick={() => onViewQR(classData)}
             className="flex items-center gap-1"
           >
             <QrCode className="h-3 w-3" />
             QR코드
-          </Button>
+          </Button> */}
         </div>
       </CardContent>
     </Card>

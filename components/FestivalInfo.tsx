@@ -74,7 +74,7 @@ export function FestivalInfo() {
             <div className="grid md:grid-cols-2 gap-8">
               <div>
                 <ImageWithFallback 
-                  src="https://imgur.com/nJq6MBk.png"
+                  src="https://imgur.com/MTtv2eG.png"
                   alt="수업나눔한마당 현장"
                   className="w-full h-64 object-cover rounded-lg"
                 />
@@ -304,7 +304,7 @@ export function FestivalInfo() {
                 onClick={() => setActiveSection("about")}
               >
                 <Star className="mr-2 h-4 w-4" />
-                About 수업축제
+                About 수업나눔한마당
               </Button>
               <Button 
                 variant={activeSection === "poster" ? "default" : "ghost"}
