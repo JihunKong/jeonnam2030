@@ -801,8 +801,8 @@ export function ClassSchedule() {
         <div className="max-w-6xl mx-auto">
           <div className="flex justify-between items-center mb-6">
             <div>
-              <h2 className="text-2xl font-bold mb-2">수업 공개 일정</h2>
-              <p className="text-muted-foreground">2030교실의 혁신적인 수업을 참관해보세요</p>
+              <h2 className="text-2xl font-bold mb-2">수업나눔 일정</h2>
+              <p className="text-muted-foreground">2030 미래수업을 연구하고 실천하는 교실을 만나보세요.</p>
             </div>
             
             <div className="flex items-center gap-4">

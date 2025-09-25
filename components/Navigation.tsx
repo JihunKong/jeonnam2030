@@ -11,7 +11,7 @@ export function Navigation({ activeTab, onTabChange }: NavigationProps) {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
           <div className="flex items-center space-x-4">
-            <h1 className="text-2xl font-bold text-primary">2030 수업 축제</h1>
+            <h1 className="text-2xl font-bold text-primary">2030수업축제</h1>
             <span className="text-sm text-muted-foreground">전라남도교육청</span>
           </div>
         </div>
@@ -19,8 +19,8 @@ export function Navigation({ activeTab, onTabChange }: NavigationProps) {
         <Tabs value={activeTab} onValueChange={onTabChange} className="w-full">
           <TabsList className="grid w-full grid-cols-4 h-12">
             <TabsTrigger value="about" className="text-sm">About 2030교실</TabsTrigger>
-            <TabsTrigger value="schedule" className="text-sm">수업 공개 일정 및 신청</TabsTrigger>
-            <TabsTrigger value="festival" className="text-sm">수업 축제 안내</TabsTrigger>
+            <TabsTrigger value="schedule" className="text-sm">수업나눔 일정 및 신청</TabsTrigger>
+            <TabsTrigger value="festival" className="text-sm">수업나눔한마당</TabsTrigger>
             <TabsTrigger value="contact" className="text-sm">Contact Us</TabsTrigger>
           </TabsList>
         </Tabs>

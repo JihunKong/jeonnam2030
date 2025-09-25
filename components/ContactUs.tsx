@@ -10,7 +10,7 @@ export function ContactUs() {
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold mb-4">Contact Us</h2>
           <p className="text-lg text-muted-foreground">
-            2030 수업 축제 관련 문의사항이 있으시면 언제든 연락해주세요
+            2030수업축제 관련 문의사항이 있으시면 언제든 연락해주세요
           </p>
         </div>
 

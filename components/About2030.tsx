@@ -6,8 +6,8 @@ export function About2030() {
     <div className="container mx-auto px-4 py-8">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold mb-4">전라남도교육청 2030교실</h2>
-          <p className="text-lg text-muted-foreground">미래교육을 선도하는 혁신적인 교실 환경</p>
+          <h2 className="text-3xl font-bold mb-4">2030교실</h2>
+          <p className="text-lg text-muted-foreground">미래수업을 연구하고 실천하는 교실</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 mb-8">
@@ -75,7 +75,7 @@ export function About2030() {
                   <h4 className="font-semibold mb-2">🔧 첨단 교실 환경</h4>
                   <ul className="space-y-1 text-sm">
                     <li>• 최첨단 디지털 기기 활용 교육</li>
-                    <li>• 2030 교실 맞춤형 플랫폼</li>
+                    <li>• 2030교실 맞춤형 플랫폼</li>
                     <li>• 시공간을 초월하는 네트워킹 플랫폼</li>
                   </ul>
                 </div>

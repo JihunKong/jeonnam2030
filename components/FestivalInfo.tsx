@@ -65,7 +65,7 @@ export function FestivalInfo() {
         return (
           <div className="space-y-6">
             <div className="text-center mb-8">
-              <h2 className="text-3xl font-bold mb-4">2030 수업 축제</h2>
+              <h2 className="text-3xl font-bold mb-4">2030수업축제</h2>
               <p className="text-lg text-muted-foreground">
                 미래교육의 새로운 패러다임을 제시하는 교육 축제
               </p>
@@ -89,14 +89,14 @@ export function FestivalInfo() {
                   </CardHeader>
                   <CardContent>
                     <p className="mb-4">
-                      전라남도교육청이 주관하는 2030 수업 축제는 미래형 교실에서 
+                      전라남도교육청이 주관하는 2030수업축제는 미래형 교실에서 
                       이루어지는 혁신적인 수업 사례를 공유하고, 전남의 선생님들과 
                       함께 소통하는 교육 박람회입니다.
                     </p>
                     <div className="space-y-2">
                       <div className="flex items-center gap-2 text-sm">
                         <Calendar className="h-4 w-4" />
-                        <span>2025년 11월 29일 (일)</span>
+                        <span>2025년 11월 29일 (토)</span>
                       </div>
                       <div className="flex items-center gap-2 text-sm">
                         <Clock className="h-4 w-4" />
@@ -104,7 +104,7 @@ export function FestivalInfo() {
                       </div>
                       <div className="flex items-center gap-2 text-sm">
                         <MapPin className="h-4 w-4" />
-                        <span>순천 삼산중학교</span>
+                        <span>순천삼산중학교</span>
                       </div>
                     </div>
                   </CardContent>
@@ -229,11 +229,11 @@ export function FestivalInfo() {
                       <div>
                         <h4 className="font-semibold mb-1">주소</h4>
                         <p className="text-sm">전라남도 순천시 해룡면 매안로 84</p>
-                        <p className="text-sm">순천 삼산중학교</p>
+                        <p className="text-sm">순천삼산중학교</p>
                       </div>
                       <div>
                         <h4 className="font-semibold mb-1">전화번호</h4>
-                        <p className="text-sm">061-260-0000</p>
+                        <p className="text-sm">061-752-2982</p>
                       </div>
                       <div>
                         <h4 className="font-semibold mb-1">주차 안내</h4>
@@ -264,7 +264,7 @@ export function FestivalInfo() {
                         <h4 className="font-semibold mb-2">🚗 자가용</h4>
                         <ul className="space-y-1 text-sm">
                           <li>• 신대IC에서 20분</li>
-                          <li>• 네비게이션: "순천 삼산중학교"</li>
+                          <li>• 네비게이션: "순천삼산중학교"</li>
                         </ul>
                       </div>
                     </CardContent>
@@ -296,7 +296,7 @@ export function FestivalInfo() {
       <div className="w-64 bg-sidebar border-r border-sidebar-border p-4">
         <div className="space-y-4">
           <div>
-            <h3 className="font-semibold mb-3">수업 축제</h3>
+            <h3 className="font-semibold mb-3">수업축제</h3>
             <nav className="space-y-2">
               <Button 
                 variant={activeSection === "about" ? "default" : "ghost"}
@@ -304,7 +304,7 @@ export function FestivalInfo() {
                 onClick={() => setActiveSection("about")}
               >
                 <Star className="mr-2 h-4 w-4" />
-                About 수업 축제
+                About 수업축제
               </Button>
               <Button 
                 variant={activeSection === "poster" ? "default" : "ghost"}
@@ -320,7 +320,7 @@ export function FestivalInfo() {
                 onClick={() => setActiveSection("schedule")}
               >
                 <Calendar className="mr-2 h-4 w-4" />
-                축제 일정
+                축제일정
               </Button>
               <Button 
                 variant={activeSection === "directions" ? "default" : "ghost"}
