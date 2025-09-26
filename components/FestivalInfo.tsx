@@ -275,9 +275,17 @@ export function FestivalInfo() {
               <div className="mt-8">
                 <Card>
                   <CardContent className="p-6">
-                    <div className="w-full h-64 bg-gray-200 rounded-lg flex items-center justify-center">
-                      <p className="text-gray-500">지도가 여기에 표시됩니다</p>
-                    </div>
+                    <iframe
+                      src={`https://www.google.com/maps/embed/v1/place?key=${import.meta.env.VITE_GOOGLE_MAPS_API_KEY}&q=순천삼산중학교&zoom=15&maptype=roadmap`}
+                      width="100%"
+                      height="300"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="순천삼산중학교 위치"
+                      className="rounded-lg"
+                    ></iframe>
                   </CardContent>
                 </Card>
               </div>
