@@ -13,7 +13,7 @@ export function About2030() {
         <div className="grid md:grid-cols-2 gap-8 mb-8">
           <div>
             <ImageWithFallback 
-              src="https://i.imgur.com/hMgiSgV.png" 
+              src="/images/about-2030.png" 
               alt="2030교실 환경 - 현대적인 교실에서 기술을 활용하는 학생들"
               className="w-full h-64 object-cover rounded-lg mb-4"
               />
