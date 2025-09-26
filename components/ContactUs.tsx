@@ -28,7 +28,7 @@ export function ContactUs() {
               {/* 기존 원형 프레임에 imgur 이미지 추가 */}
                 <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3 overflow-hidden">
                   <img 
-                    src="https://imgur.com/pUyhAE7.png"  // imgur 링크
+                    src="/images/contact-image1.png"
                     alt="박현정 장학사"
                     className="w-full h-full object-cover"
                   />
@@ -86,7 +86,7 @@ export function ContactUs() {
               <div className="text-center pb-4 border-b border-border">
                 <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3 overflow-hidden">
                   <img 
-                    src="https://imgur.com/Bk8pwSa.png"  // imgur 링크
+                    src="/images/contact-image2.png"
                     alt="교사 공지훈"
                     className="w-full h-full object-cover"
                   />

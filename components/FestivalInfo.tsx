@@ -74,7 +74,7 @@ export function FestivalInfo() {
             <div className="grid md:grid-cols-2 gap-8">
               <div>
                 <ImageWithFallback 
-                  src="https://imgur.com/nJq6MBk.png"
+                  src="/images/festival-scene.png"
                   alt="수업나눔한마당 현장"
                   className="w-full h-64 object-cover rounded-lg"
                 />
@@ -173,7 +173,7 @@ export function FestivalInfo() {
             <h2 className="text-2xl font-bold text-center mb-6">축제 포스터</h2>
             <div className="max-w-2xl mx-auto">
               <ImageWithFallback 
-                src="https://imgur.com/MTtv2eG.png"
+                src="/images/festival-poster.png"
                 alt="2030수업축제 포스터"
                 className="w-full rounded-lg shadow-lg"
               />
