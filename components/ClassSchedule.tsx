@@ -233,7 +233,7 @@ export function ClassSchedule() {
     "time": "14:40 - 15:25",
     "location": "목포홍일중 2-3 교실",
     "description": "여행 속 기후변화, 영어로 기록하기",
-    "driveLink": "없음",
+    "driveLink": "https://abit.ly/홍일중영어2030",
     "region": "목포시"
   },
   {
