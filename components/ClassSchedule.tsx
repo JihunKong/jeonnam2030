@@ -783,13 +783,14 @@ export function ClassSchedule() {
                 <Calendar className="mr-2 h-4 w-4" />
                 수업나눔일정
               </Button>
-              <Button 
-                variant="ghost" 
+              <Button
+                variant="ghost"
                 className="w-full justify-start"
-                onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSd5Mco97HyPTjyIFsqWwoe-XtHvtYBEfmHaiATQQ8PfXIcFXQ/viewform", "_blank")}
+                onClick={() => window.open("https://script.google.com/macros/s/AKfycbz2n-c6kH72Rc1yRhbtrlfmVe-oX7NAFEohgGNGgVtIqBofn0U7NWrjiOrMp5kjDGOFRg/exec", "_blank")}
               >
                 <FileText className="mr-2 h-4 w-4" />
-                참관 신청
+                신청 확인
+                <ExternalLink className="ml-auto h-3 w-3" />
               </Button>
             </nav>
           </div>
@@ -806,16 +807,6 @@ export function ClassSchedule() {
             </div>
             
             <div className="flex items-center gap-4">
-              <Button
-                variant="outline"
-                onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSd5Mco97HyPTjyIFsqWwoe-XtHvtYBEfmHaiATQQ8PfXIcFXQ/viewform", "_blank")}
-                className="flex items-center gap-2"
-              >
-                <Users className="h-4 w-4" />
-                참관 신청하기
-                <ExternalLink className="h-3 w-3" />
-              </Button>
-              
               <Tabs value={viewMode} onValueChange={(value: string) => setViewMode(value as "list" | "card")}>
                 <TabsList>
                   <TabsTrigger value="card">카드형</TabsTrigger>
