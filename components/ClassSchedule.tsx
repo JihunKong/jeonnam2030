@@ -807,6 +807,16 @@ export function ClassSchedule() {
             </div>
             
             <div className="flex items-center gap-4">
+              <Button
+                variant="outline"
+                onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSej9IOErowF-Fy3YGcEUL3x1Qks6FVb2QzhF54eqqmDn5Becw/viewform", "_blank")}
+                className="flex items-center gap-2"
+              >
+                <Users className="h-4 w-4" />
+                참관 신청하기
+                <ExternalLink className="h-3 w-3" />
+              </Button>
+
               <Tabs value={viewMode} onValueChange={(value: string) => setViewMode(value as "list" | "card")}>
                 <TabsList>
                   <TabsTrigger value="card">카드형</TabsTrigger>
