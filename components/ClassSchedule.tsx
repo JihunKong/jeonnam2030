@@ -781,7 +781,7 @@ export function ClassSchedule() {
             <div className="flex items-center gap-4">
               <Button
                 variant="outline"
-                onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSej9IOErowF-Fy3YGcEUL3x1Qks6FVb2QzhF54eqqmDn5Becw/viewform", "_blank")}
+                onClick={() => window.open("https://forms.gle/N5j8yYNU535RxoTq9", "_blank")}
                 className="flex items-center gap-2"
               >
                 참관 신청하기
