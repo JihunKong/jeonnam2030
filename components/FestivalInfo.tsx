@@ -344,7 +344,7 @@ export function FestivalInfo() {
                 onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSej9IOErowF-Fy3YGcEUL3x1Qks6FVb2QzhF54eqqmDn5Becw/formResponse", "_blank")}
               >
                 <Users className="mr-2 h-4 w-4" />
-                한마당 신청하기
+                신청하기
                 <ExternalLink className="ml-auto h-3 w-3" />
               </Button>
             </nav>
