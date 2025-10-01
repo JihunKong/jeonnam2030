@@ -172,8 +172,8 @@ export function FestivalInfo() {
           <div className="space-y-6">
             <h2 className="text-2xl font-bold text-center mb-6">축제 포스터</h2>
             <div className="max-w-2xl mx-auto">
-              <ImageWithFallback 
-                src="/images/festival-poster.png"
+              <ImageWithFallback
+                src="/images/festival-poster.png?v=20251001"
                 alt="2030수업축제 포스터"
                 className="w-full rounded-lg shadow-lg"
               />
