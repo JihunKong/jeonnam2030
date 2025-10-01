@@ -769,34 +769,6 @@ export function ClassSchedule() {
 
   return (
     <div className="flex h-full">
-      {/* 좌측 사이드바 */}
-      <div className="w-64 bg-sidebar border-r border-sidebar-border p-4">
-        <div className="space-y-4">
-          <div>
-            <h3 className="font-semibold mb-3">수업나눔</h3>
-            <nav className="space-y-2">
-              <Button 
-                variant="ghost" 
-                className="w-full justify-start"
-                onClick={() => {/* 수업공개일정 */}}
-              >
-                <Calendar className="mr-2 h-4 w-4" />
-                수업나눔일정
-              </Button>
-              <Button
-                variant="ghost"
-                className="w-full justify-start"
-                onClick={() => window.open("https://script.google.com/macros/s/AKfycbw3LQ8uBKca3yOEykDPjb1Qfd0jo8sGvIpfUemDykt7FXm4tqN5FkITqQa7lPbcCxvY/exec", "_blank")}
-              >
-                <FileText className="mr-2 h-4 w-4" />
-                신청 확인
-                <ExternalLink className="ml-auto h-3 w-3" />
-              </Button>
-            </nav>
-          </div>
-        </div>
-      </div>
-
       {/* 메인 컨텐츠 */}
       <div className="flex-1 p-6">
         <div className="max-w-6xl mx-auto">
@@ -812,8 +784,16 @@ export function ClassSchedule() {
                 onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSej9IOErowF-Fy3YGcEUL3x1Qks6FVb2QzhF54eqqmDn5Becw/viewform", "_blank")}
                 className="flex items-center gap-2"
               >
-                <Users className="h-4 w-4" />
                 참관 신청하기
+                <ExternalLink className="h-3 w-3" />
+              </Button>
+
+              <Button
+                variant="outline"
+                onClick={() => window.open("https://script.google.com/macros/s/AKfycbw3LQ8uBKca3yOEykDPjb1Qfd0jo8sGvIpfUemDykt7FXm4tqN5FkITqQa7lPbcCxvY/exec", "_blank")}
+                className="flex items-center gap-2"
+              >
+                신청 확인
                 <ExternalLink className="h-3 w-3" />
               </Button>
 
