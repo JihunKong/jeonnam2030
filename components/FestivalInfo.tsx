@@ -66,17 +66,9 @@ export function FestivalInfo() {
           <div className="space-y-6">
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold mb-4">2030수업나눔한마당</h2>
-              <p className="text-lg text-muted-foreground mb-4">
+              <p className="text-lg text-muted-foreground">
                 미래교육의 새로운 패러다임을 제시하는 2030수업나눔한마당
               </p>
-              <Button
-                size="lg"
-                onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSej9IOErowF-Fy3YGcEUL3x1Qks6FVb2QzhF54eqqmDn5Becw/formResponse", "_blank")}
-                className="flex items-center gap-2"
-              >
-                수업나눔한마당 신청하기
-                <ExternalLink className="h-4 w-4" />
-              </Button>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8">
@@ -338,13 +330,22 @@ export function FestivalInfo() {
                 <Calendar className="mr-2 h-4 w-4" />
                 축제일정
               </Button>
-              <Button 
+              <Button
                 variant={activeSection === "directions" ? "default" : "ghost"}
                 className="w-full justify-start"
                 onClick={() => setActiveSection("directions")}
               >
                 <MapPin className="mr-2 h-4 w-4" />
                 찾아오시는 길
+              </Button>
+              <Button
+                variant="ghost"
+                className="w-full justify-start"
+                onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSej9IOErowF-Fy3YGcEUL3x1Qks6FVb2QzhF54eqqmDn5Becw/formResponse", "_blank")}
+              >
+                <Users className="mr-2 h-4 w-4" />
+                한마당 신청하기
+                <ExternalLink className="ml-auto h-3 w-3" />
               </Button>
             </nav>
           </div>
