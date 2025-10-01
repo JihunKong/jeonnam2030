@@ -294,7 +294,7 @@ export function ClassSchedule() {
     "teacher": "윤O근",
     "subject": "영어",
     "grade": "고등학교",
-    "date": "2025년 10월 24일",
+    "date": "2025년 11월 7일",
     "time": "10:40 - 11:30",
     "location": "순천매산여고 2030교실",
     "description": "인간의 본성에 대한 탐구(단편 소설에 나타난 인간의 심리)",
@@ -786,7 +786,7 @@ export function ClassSchedule() {
               <Button
                 variant="ghost"
                 className="w-full justify-start"
-                onClick={() => window.open("https://script.google.com/macros/s/AKfycbz2n-c6kH72Rc1yRhbtrlfmVe-oX7NAFEohgGNGgVtIqBofn0U7NWrjiOrMp5kjDGOFRg/exec", "_blank")}
+                onClick={() => window.open("https://script.google.com/macros/s/AKfycbw3LQ8uBKca3yOEykDPjb1Qfd0jo8sGvIpfUemDykt7FXm4tqN5FkITqQa7lPbcCxvY/exec", "_blank")}
               >
                 <FileText className="mr-2 h-4 w-4" />
                 신청 확인
