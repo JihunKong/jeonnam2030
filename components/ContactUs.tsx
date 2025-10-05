@@ -171,17 +171,17 @@ export function ContactUs() {
               <p className="text-sm text-muted-foreground mb-3">
                 더 궁금한 사항이 있으시면 언제든 홍보팀에 연락해주세요!<br/>
               </p>
-              <div className="flex justify-center gap-2">
-                <Button variant="outline" size="sm">
+              <div className="flex flex-wrap justify-center gap-2">
+                <Button variant="outline" size="sm" className="text-xs sm:text-sm">
                   남악고 수석교사 강정
                 </Button>
-                <Button variant="outline" size="sm">
+                <Button variant="outline" size="sm" className="text-xs sm:text-sm">
                   완도고 교사 봉창훈
                 </Button>
-                <Button variant="outline" size="sm">
+                <Button variant="outline" size="sm" className="text-xs sm:text-sm">
                   순천미래과학고 교사 강대혁
                 </Button>
-                <Button variant="outline" size="sm">
+                <Button variant="outline" size="sm" className="text-xs sm:text-sm">
                   문태중 교사 김현수
                 </Button>
               </div>
