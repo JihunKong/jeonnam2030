@@ -773,12 +773,12 @@ export function ClassSchedule() {
       <div className="flex-1 p-4 sm:p-6">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col gap-4 mb-6">
-            <div>
-              <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-1 sm:mb-2">수업나눔 일정</h2>
-              <p className="text-xs sm:text-sm md:text-base text-muted-foreground">2030 미래수업을 연구하고 실천하는 교실을 만나보세요.</p>
+            <div className="text-center">
+              <h2 className="text-2xl sm:text-3xl font-bold mb-4">2030교실</h2>
+              <p className="text-base sm:text-lg text-muted-foreground">미래수업을 연구하고 실천하는 교실</p>
             </div>
 
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 md:gap-4 sm:self-start md:self-auto">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-2 md:gap-4">
               <Button
                 variant="outline"
                 onClick={() => window.open("https://forms.gle/N5j8yYNU535RxoTq9", "_blank")}
