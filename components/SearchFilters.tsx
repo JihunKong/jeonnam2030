@@ -149,7 +149,7 @@ export function SearchFilters({ onFiltersChange }: SearchFiltersProps) {
           />
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-2 sm:gap-3 md:gap-4">
           {/* 과목 필터 */}
           <Collapsible open={expandedSections.subjects} onOpenChange={() => toggleSection("subjects")}>
             <CollapsibleTrigger asChild>
@@ -233,7 +233,7 @@ export function SearchFilters({ onFiltersChange }: SearchFiltersProps) {
           </CollapsibleTrigger>
           <CollapsibleContent className="mt-2">
             <div className="border rounded-md p-3">
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 max-h-48 overflow-y-auto">
+              <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 max-h-48 overflow-y-auto">
                 {REGIONS.map((region) => (
                   <div key={region} className="flex items-center space-x-2">
                     <Checkbox
