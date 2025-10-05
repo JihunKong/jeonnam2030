@@ -770,19 +770,19 @@ export function ClassSchedule() {
   return (
     <div className="flex h-full">
       {/* 메인 컨텐츠 */}
-      <div className="flex-1 p-6">
+      <div className="flex-1 p-4 sm:p-6">
         <div className="max-w-6xl mx-auto">
-          <div className="flex justify-between items-center mb-6">
+          <div className="flex flex-col gap-4 mb-6">
             <div>
-              <h2 className="text-2xl font-bold mb-2">수업나눔 일정</h2>
-              <p className="text-muted-foreground">2030 미래수업을 연구하고 실천하는 교실을 만나보세요.</p>
+              <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-1 sm:mb-2">수업나눔 일정</h2>
+              <p className="text-xs sm:text-sm md:text-base text-muted-foreground">2030 미래수업을 연구하고 실천하는 교실을 만나보세요.</p>
             </div>
-            
-            <div className="flex items-center gap-4">
+
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 md:gap-4 sm:self-start md:self-auto">
               <Button
                 variant="outline"
                 onClick={() => window.open("https://forms.gle/N5j8yYNU535RxoTq9", "_blank")}
-                className="flex items-center gap-2"
+                className="flex items-center justify-center gap-2 text-sm"
               >
                 참관 신청하기
                 <ExternalLink className="h-3 w-3" />
@@ -791,7 +791,7 @@ export function ClassSchedule() {
               <Button
                 variant="outline"
                 onClick={() => window.open("https://script.google.com/macros/s/AKfycbw3LQ8uBKca3yOEykDPjb1Qfd0jo8sGvIpfUemDykt7FXm4tqN5FkITqQa7lPbcCxvY/exec", "_blank")}
-                className="flex items-center gap-2"
+                className="flex items-center justify-center gap-2 text-sm"
               >
                 신청 확인
                 <ExternalLink className="h-3 w-3" />
@@ -810,9 +810,9 @@ export function ClassSchedule() {
           <SearchFilters onFiltersChange={handleFiltersChange} />
 
           {/* 검색 결과 요약 */}
-          <div className="flex items-center justify-between mb-4">
-            <div className="flex items-center gap-2">
-              <span className="text-sm text-muted-foreground">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4">
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="text-xs sm:text-sm text-muted-foreground">
                 총 {filteredClasses.length}개의 수업이 검색되었습니다
               </span>
               {filteredClasses.length !== classesWithStatus.length && (
@@ -837,7 +837,7 @@ export function ClassSchedule() {
               </CardContent>
             </Card>
           ) : (
-            <div className={viewMode === "card" ? "grid md:grid-cols-2 lg:grid-cols-3 gap-4" : "space-y-4"}>
+            <div className={viewMode === "card" ? "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4" : "space-y-4"}>
               {filteredClasses.map((classData) => (
                 viewMode === "card" ? (
                   <ClassCard 
