@@ -299,32 +299,32 @@ export function FestivalInfo() {
   };
 
   return (
-    <div className="flex h-full">
-      {/* 좌측 사이드바 */}
-      <div className="w-64 bg-sidebar border-r border-sidebar-border p-4">
+    <div className="flex flex-col md:flex-row h-full">
+      {/* 좌측 사이드바 - 모바일에서는 상단 탭처럼 표시 */}
+      <div className="w-full md:w-64 bg-sidebar border-b md:border-b-0 md:border-r border-sidebar-border p-4">
         <div className="space-y-4">
           <div>
-            <h3 className="font-semibold mb-3">수업축제</h3>
-            <nav className="space-y-2">
-              <Button 
+            <h3 className="font-semibold mb-3 hidden md:block">수업축제</h3>
+            <nav className="flex md:flex-col gap-2 overflow-x-auto md:overflow-x-visible pb-2 md:pb-0">
+              <Button
                 variant={activeSection === "about" ? "default" : "ghost"}
-                className="w-full justify-start"
+                className="flex-shrink-0 md:w-full justify-start whitespace-nowrap text-xs md:text-sm"
                 onClick={() => setActiveSection("about")}
               >
                 <Star className="mr-2 h-4 w-4" />
                 About 수업나눔한마당
               </Button>
-              <Button 
+              <Button
                 variant={activeSection === "poster" ? "default" : "ghost"}
-                className="w-full justify-start"
+                className="flex-shrink-0 md:w-full justify-start whitespace-nowrap text-xs md:text-sm"
                 onClick={() => setActiveSection("poster")}
               >
                 <Award className="mr-2 h-4 w-4" />
                 포스터
               </Button>
-              <Button 
+              <Button
                 variant={activeSection === "schedule" ? "default" : "ghost"}
-                className="w-full justify-start"
+                className="flex-shrink-0 md:w-full justify-start whitespace-nowrap text-xs md:text-sm"
                 onClick={() => setActiveSection("schedule")}
               >
                 <Calendar className="mr-2 h-4 w-4" />
@@ -332,7 +332,7 @@ export function FestivalInfo() {
               </Button>
               <Button
                 variant={activeSection === "directions" ? "default" : "ghost"}
-                className="w-full justify-start"
+                className="flex-shrink-0 md:w-full justify-start whitespace-nowrap text-xs md:text-sm"
                 onClick={() => setActiveSection("directions")}
               >
                 <MapPin className="mr-2 h-4 w-4" />
@@ -340,7 +340,7 @@ export function FestivalInfo() {
               </Button>
               <Button
                 variant="ghost"
-                className="w-full justify-start"
+                className="flex-shrink-0 md:w-full justify-start whitespace-nowrap text-xs md:text-sm"
                 onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSej9IOErowF-Fy3YGcEUL3x1Qks6FVb2QzhF54eqqmDn5Becw/formResponse", "_blank")}
               >
                 <Users className="mr-2 h-4 w-4" />

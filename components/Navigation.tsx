@@ -17,11 +17,11 @@ export function Navigation({ activeTab, onTabChange }: NavigationProps) {
         </div>
         
         <Tabs value={activeTab} onValueChange={onTabChange} className="w-full">
-          <TabsList className="grid w-full grid-cols-4 h-12">
-            <TabsTrigger value="about" className="text-sm">About 2030교실</TabsTrigger>
-            <TabsTrigger value="schedule" className="text-sm">수업나눔 일정 및 신청</TabsTrigger>
-            <TabsTrigger value="festival" className="text-sm">수업나눔한마당</TabsTrigger>
-            <TabsTrigger value="contact" className="text-sm">Contact Us</TabsTrigger>
+          <TabsList className="grid w-full grid-cols-2 sm:grid-cols-4 h-auto gap-1 sm:gap-0 sm:h-12">
+            <TabsTrigger value="about" className="text-xs sm:text-sm py-2 sm:py-0">About 2030교실</TabsTrigger>
+            <TabsTrigger value="schedule" className="text-xs sm:text-sm py-2 sm:py-0">수업나눔 일정 및 신청</TabsTrigger>
+            <TabsTrigger value="festival" className="text-xs sm:text-sm py-2 sm:py-0">수업나눔한마당</TabsTrigger>
+            <TabsTrigger value="contact" className="text-xs sm:text-sm py-2 sm:py-0">Contact Us</TabsTrigger>
           </TabsList>
         </Tabs>
       </div>
