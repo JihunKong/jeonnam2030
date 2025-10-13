@@ -6,7 +6,7 @@ import { Label } from "./ui/label";
 import { Textarea } from "./ui/textarea";
 import { Alert, AlertDescription } from "./ui/alert";
 import { AlertCircle, Loader2 } from "lucide-react";
-import { ResearchGroup, createResearchGroup, updateResearchGroup, verifyPassword } from "../services/firebase";
+import { ResearchGroup, createResearchGroup, updateResearchGroup } from "../services/api";
 
 interface ResearchGroupFormProps {
   isOpen: boolean;
@@ -26,7 +26,6 @@ export function ResearchGroupForm({ isOpen, onClose, onSuccess, editingGroup }: 
 
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [step, setStep] = useState<'form' | 'password'>('form');
 
   useEffect(() => {
     if (editingGroup) {
@@ -37,7 +36,6 @@ export function ResearchGroupForm({ isOpen, onClose, onSuccess, editingGroup }: 
         docsLink: editingGroup.docsLink,
         password: ''
       });
-      setStep('password'); // When editing, ask for password first
     } else {
       setFormData({
         name: '',
@@ -46,30 +44,9 @@ export function ResearchGroupForm({ isOpen, onClose, onSuccess, editingGroup }: 
         docsLink: '',
         password: ''
       });
-      setStep('form');
     }
     setError(null);
   }, [editingGroup, isOpen]);
-
-  const handleVerifyPassword = async () => {
-    if (!editingGroup) return;
-
-    setLoading(true);
-    setError(null);
-
-    try {
-      const isValid = await verifyPassword(formData.password, editingGroup.passwordHash);
-      if (isValid) {
-        setStep('form');
-      } else {
-        setError('비밀번호가 일치하지 않습니다.');
-      }
-    } catch (err) {
-      setError('비밀번호 확인 중 오류가 발생했습니다.');
-    } finally {
-      setLoading(false);
-    }
-  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -77,28 +54,31 @@ export function ResearchGroupForm({ isOpen, onClose, onSuccess, editingGroup }: 
     setError(null);
 
     try {
+      if (!formData.password) {
+        setError('비밀번호를 입력해주세요.');
+        setLoading(false);
+        return;
+      }
+
       if (editingGroup) {
-        // Update existing group
+        // Update existing group - backend will verify password
         await updateResearchGroup(editingGroup.id, {
           name: formData.name,
           description: formData.description,
           howToJoin: formData.howToJoin,
-          docsLink: formData.docsLink
+          docsLink: formData.docsLink,
+          password: formData.password
         });
       } else {
         // Create new group
-        if (!formData.password) {
-          setError('비밀번호를 입력해주세요.');
-          setLoading(false);
-          return;
-        }
         await createResearchGroup(formData);
       }
 
       onSuccess();
       onClose();
     } catch (err) {
-      setError('저장 중 오류가 발생했습니다. 다시 시도해주세요.');
+      const errorMessage = err instanceof Error ? err.message : '저장 중 오류가 발생했습니다. 다시 시도해주세요.';
+      setError(errorMessage);
       console.error(err);
     } finally {
       setLoading(false);
@@ -110,7 +90,6 @@ export function ResearchGroupForm({ isOpen, onClose, onSuccess, editingGroup }: 
   };
 
   const handleClose = () => {
-    setStep('form');
     setFormData({
       name: '',
       description: '',
@@ -138,29 +117,7 @@ export function ResearchGroupForm({ isOpen, onClose, onSuccess, editingGroup }: 
           </Alert>
         )}
 
-        {step === 'password' && editingGroup ? (
-          <div className="space-y-4">
-            <div>
-              <Label htmlFor="verify-password">비밀번호 확인</Label>
-              <Input
-                id="verify-password"
-                type="password"
-                placeholder="연구회 등록 시 사용한 비밀번호 입력"
-                value={formData.password}
-                onChange={(e) => handleChange('password', e.target.value)}
-                onKeyDown={(e) => e.key === 'Enter' && handleVerifyPassword()}
-              />
-              <p className="text-xs text-muted-foreground mt-1">
-                * 관리자 비밀번호로도 수정 가능합니다
-              </p>
-            </div>
-            <Button onClick={handleVerifyPassword} disabled={loading} className="w-full">
-              {loading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
-              확인
-            </Button>
-          </div>
-        ) : (
-          <form onSubmit={handleSubmit} className="space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-4">
             <div>
               <Label htmlFor="name">교과연구회명 *</Label>
               <Input
@@ -211,22 +168,22 @@ export function ResearchGroupForm({ isOpen, onClose, onSuccess, editingGroup }: 
               </p>
             </div>
 
-            {!editingGroup && (
-              <div>
-                <Label htmlFor="password">비밀번호 *</Label>
-                <Input
-                  id="password"
-                  type="password"
-                  value={formData.password}
-                  onChange={(e) => handleChange('password', e.target.value)}
-                  placeholder="수정/삭제 시 사용할 비밀번호"
-                  required
-                />
+            <div>
+              <Label htmlFor="password">비밀번호 *</Label>
+              <Input
+                id="password"
+                type="password"
+                value={formData.password}
+                onChange={(e) => handleChange('password', e.target.value)}
+                placeholder={editingGroup ? "연구회 등록 시 사용한 비밀번호" : "수정/삭제 시 사용할 비밀번호"}
+                required
+              />
+              {!editingGroup && (
                 <p className="text-xs text-muted-foreground mt-1">
                   * 이 비밀번호로 나중에 수정/삭제가 가능합니다
                 </p>
-              </div>
-            )}
+              )}
+            </div>
 
             <DialogFooter>
               <Button type="button" variant="outline" onClick={handleClose}>
@@ -238,7 +195,6 @@ export function ResearchGroupForm({ isOpen, onClose, onSuccess, editingGroup }: 
               </Button>
             </DialogFooter>
           </form>
-        )}
       </DialogContent>
     </Dialog>
   );

@@ -21,7 +21,7 @@ export function Navigation({ activeTab, onTabChange }: NavigationProps) {
             <TabsTrigger value="about" className="text-xs sm:text-sm py-2 sm:py-0">About 2030교실</TabsTrigger>
             <TabsTrigger value="schedule" className="text-xs sm:text-sm py-2 sm:py-0">수업나눔 일정 및 신청</TabsTrigger>
             <TabsTrigger value="festival" className="text-xs sm:text-sm py-2 sm:py-0">수업나눔한마당</TabsTrigger>
-            <TabsTrigger value="research" className="text-xs sm:text-sm py-2 sm:py-0">교과 연구회</TabsTrigger>
+            <TabsTrigger value="research" className="text-xs sm:text-sm py-2 sm:py-0">교과연구회 배움마당</TabsTrigger>
             <TabsTrigger value="contact" className="text-xs sm:text-sm py-2 sm:py-0">Contact Us</TabsTrigger>
           </TabsList>
         </Tabs>

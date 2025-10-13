@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Button } from "./ui/button";
 import { ExternalLink, Edit, Trash2 } from "lucide-react";
-import { ResearchGroup } from "../services/firebase";
+import { ResearchGroup } from "../services/api";
 
 interface ResearchGroupCardProps {
   group: ResearchGroup;
