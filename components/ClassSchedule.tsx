@@ -790,7 +790,7 @@ export function ClassSchedule() {
 
               <Button
                 variant="outline"
-                onClick={() => window.open("https://script.google.com/macros/s/AKfycbw3LQ8uBKca3yOEykDPjb1Qfd0jo8sGvIpfUemDykt7FXm4tqN5FkITqQa7lPbcCxvY/exec", "_blank")}
+                onClick={() => window.open("https://script.google.com/macros/s/AKfycbxvC1tf8x2Y-X6BIrbEAGpUyIWNZEvNhPzwkr9rtliEG_621hoe2asKHkxrYUFNOXh0sw/exec", "_blank")}
                 className="flex items-center justify-center gap-2 text-sm"
               >
                 신청 확인
