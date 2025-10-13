@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Navigation Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Simulating the current navigation styles */
+        .tabs-list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            background: #f3f4f6;
+            padding: 3px;
+            border-radius: 12px;
+            height: 48px;
+        }
+
+        .tab-trigger {
+            display: flex;
+            align-items: center;
+            justify-center;
+            padding: 4px 8px;
+            font-size: 14px;
+            white-space: nowrap;
+            border-radius: 12px;
+            transition: all 0.2s;
+        }
+
+        .tab-trigger.active {
+            background: white;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+
+        /* Mobile viewport widths */
+        @media (max-width: 320px) {
+            body::before {
+                content: "320px (iPhone SE)";
+                position: fixed;
+                top: 0;
+                right: 0;
+                background: red;
+                color: white;
+                padding: 5px 10px;
+                z-index: 9999;
+            }
+        }
+
+        @media (min-width: 321px) and (max-width: 375px) {
+            body::before {
+                content: "375px (iPhone 12 mini)";
+                position: fixed;
+                top: 0;
+                right: 0;
+                background: orange;
+                color: white;
+                padding: 5px 10px;
+                z-index: 9999;
+            }
+        }
+
+        @media (min-width: 376px) and (max-width: 428px) {
+            body::before {
+                content: "390-428px (iPhone 14 Pro)";
+                position: fixed;
+                top: 0;
+                right: 0;
+                background: green;
+                color: white;
+                padding: 5px 10px;
+                z-index: 9999;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="min-h-screen">
+        <!-- Current Implementation -->
+        <div class="bg-white p-4 border-b">
+            <h2 class="text-lg font-bold mb-4">Current Implementation (Problem)</h2>
+            <div class="tabs-list">
+                <div class="tab-trigger active">About 2030교실</div>
+                <div class="tab-trigger">수업나눔 일정 및 신청</div>
+                <div class="tab-trigger">수업나눔한마당</div>
+                <div class="tab-trigger">Contact Us</div>
+            </div>
+        </div>
+
+        <!-- Solution 1: Horizontal Scroll -->
+        <div class="bg-white p-4 border-b mt-8">
+            <h2 class="text-lg font-bold mb-4">Solution 1: Horizontal Scroll</h2>
+            <div class="overflow-x-auto">
+                <div class="flex gap-2 bg-gray-100 p-1 rounded-xl min-w-max">
+                    <button class="px-4 py-2 bg-white rounded-lg whitespace-nowrap text-sm font-medium">About 2030교실</button>
+                    <button class="px-4 py-2 rounded-lg whitespace-nowrap text-sm font-medium">수업나눔 일정 및 신청</button>
+                    <button class="px-4 py-2 rounded-lg whitespace-nowrap text-sm font-medium">수업나눔한마당</button>
+                    <button class="px-4 py-2 rounded-lg whitespace-nowrap text-sm font-medium">Contact Us</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Solution 2: Shortened Labels -->
+        <div class="bg-white p-4 border-b mt-8">
+            <h2 class="text-lg font-bold mb-4">Solution 2: Shortened Labels on Mobile</h2>
+            <div class="tabs-list">
+                <div class="tab-trigger active">
+                    <span class="hidden sm:inline">About 2030교실</span>
+                    <span class="sm:hidden">2030교실</span>
+                </div>
+                <div class="tab-trigger">
+                    <span class="hidden sm:inline">수업나눔 일정 및 신청</span>
+                    <span class="sm:hidden">일정/신청</span>
+                </div>
+                <div class="tab-trigger">
+                    <span class="hidden sm:inline">수업나눔한마당</span>
+                    <span class="sm:hidden">한마당</span>
+                </div>
+                <div class="tab-trigger">
+                    <span class="hidden sm:inline">Contact Us</span>
+                    <span class="sm:hidden">Contact</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Solution 3: Hamburger Menu -->
+        <div class="bg-white p-4 border-b mt-8">
+            <h2 class="text-lg font-bold mb-4">Solution 3: Hamburger Menu on Mobile</h2>
+            <div class="flex justify-between items-center sm:hidden">
+                <span class="font-medium">2030교실</span>
+                <button class="p-2">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M3 12h18M3 6h18M3 18h18" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden sm:block tabs-list">
+                <div class="tab-trigger active">About 2030교실</div>
+                <div class="tab-trigger">수업나눔 일정 및 신청</div>
+                <div class="tab-trigger">수업나눔한마당</div>
+                <div class="tab-trigger">Contact Us</div>
+            </div>
+        </div>
+
+        <!-- Solution 4: 2x2 Grid on Mobile -->
+        <div class="bg-white p-4 border-b mt-8">
+            <h2 class="text-lg font-bold mb-4">Solution 4: 2x2 Grid on Mobile</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 bg-gray-100 p-1 rounded-xl">
+                <button class="px-3 py-2 bg-white rounded-lg text-sm font-medium text-center">2030교실</button>
+                <button class="px-3 py-2 rounded-lg text-sm font-medium text-center">일정/신청</button>
+                <button class="px-3 py-2 rounded-lg text-sm font-medium text-center">한마당</button>
+                <button class="px-3 py-2 rounded-lg text-sm font-medium text-center">Contact</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

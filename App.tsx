@@ -3,6 +3,7 @@ import { Navigation } from "./components/Navigation";
 import { About2030 } from "./components/About2030";
 import { ClassSchedule } from "./components/ClassSchedule";
 import { FestivalInfo } from "./components/FestivalInfo";
+import { ResearchGroups } from "./components/ResearchGroups";
 import { ContactUs } from "./components/ContactUs";
 
 export default function App() {
@@ -16,6 +17,8 @@ export default function App() {
         return <ClassSchedule />;
       case "festival":
         return <FestivalInfo />;
+      case "research":
+        return <ResearchGroups />;
       case "contact":
         return <ContactUs />;
       default:
