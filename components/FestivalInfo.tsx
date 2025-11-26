@@ -173,12 +173,37 @@ export function FestivalInfo() {
             <h2 className="text-2xl font-bold text-center mb-6">축제 포스터</h2>
             <div className="max-w-2xl mx-auto">
               <ImageWithFallback
-                src="/images/festival-poster.png?v=20251001b"
-                alt="2030수업축제 포스터"
+                src="/poster.jpg"
+                alt="2030수업나눔한마당 포스터"
                 className="w-full rounded-lg shadow-lg"
               />
               <div className="mt-4 text-center">
                 <Button variant="outline">포스터 다운로드</Button>
+              </div>
+            </div>
+          </div>
+        );
+
+      case "leaflet":
+        return (
+          <div className="space-y-6">
+            <h2 className="text-2xl font-bold text-center mb-6">수업나눔한마당 리플릿</h2>
+            <div className="max-w-2xl mx-auto space-y-6">
+              <div>
+                <h3 className="text-lg font-semibold mb-3 text-center">앞면</h3>
+                <ImageWithFallback
+                  src="/leaflet-front.jpg"
+                  alt="2030수업나눔한마당 리플릿 앞면"
+                  className="w-full rounded-lg shadow-lg"
+                />
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold mb-3 text-center">뒷면</h3>
+                <ImageWithFallback
+                  src="/leaflet-back.jpg"
+                  alt="2030수업나눔한마당 리플릿 뒷면"
+                  className="w-full rounded-lg shadow-lg"
+                />
               </div>
             </div>
           </div>
@@ -321,6 +346,14 @@ export function FestivalInfo() {
               >
                 <Award className="mr-2 h-4 w-4" />
                 포스터
+              </Button>
+              <Button
+                variant={activeSection === "leaflet" ? "default" : "ghost"}
+                className="flex-shrink-0 md:w-full justify-start whitespace-nowrap text-xs md:text-sm"
+                onClick={() => setActiveSection("leaflet")}
+              >
+                <Award className="mr-2 h-4 w-4" />
+                리플릿보기
               </Button>
               <Button
                 variant={activeSection === "schedule" ? "default" : "ghost"}

@@ -1,5 +1,14 @@
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
+import { Button } from "./ui/button";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { FileText } from "lucide-react";
+
+// PDF를 Google Docs Viewer로 열기 (카카오톡, Edge 등 모든 브라우저 호환)
+const openPdfInViewer = (pdfPath: string) => {
+  const fullUrl = `https://xn--2030-kc8ph53i.kr${pdfPath}`;
+  const viewerUrl = `https://docs.google.com/viewer?url=${encodeURIComponent(fullUrl)}&embedded=true`;
+  window.open(viewerUrl, '_blank');
+};
 
 export function About2030() {
   return (
@@ -23,13 +32,29 @@ export function About2030() {
               <CardHeader>
                 <CardTitle>2030교실이란?</CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="space-y-4">
                 <p>
-                  전라남도교육청에서 추진하는 미래형 교실 환경으로,<br/> 
+                  전라남도교육청에서 추진하는 미래형 교실 환경으로,<br/>
                   전남이 직면한 2030년 교육 상황을 대비하고,<br/>
                   수업 대전환을 촉진하며, K-에듀를 선도하는,<br/>
                   학생들의 역량을 키우는 혁신적인 교육 공간입니다.
                 </p>
+                <Button
+                  variant="outline"
+                  className="w-full"
+                  onClick={() => openPdfInViewer('/leaflet.pdf')}
+                >
+                  <FileText className="mr-2 h-4 w-4" />
+                  중등 2030교실 리플릿
+                </Button>
+                <Button
+                  variant="outline"
+                  className="w-full"
+                  onClick={() => openPdfInViewer('/guidemap-leaflet.pdf')}
+                >
+                  <FileText className="mr-2 h-4 w-4" />
+                  중등 수업 맛집 가이드맵 리플릿
+                </Button>
               </CardContent>
             </Card>
           </div>
